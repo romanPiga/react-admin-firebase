@@ -1,7 +1,7 @@
 {
-  "name": "react-admin-firebase",
+  "name": "react-admin-firebase-basic",
   "description": "A firebase data provider for the React Admin framework",
-  "version": "0.8.5",
+  "version": "0.0.1",
   "dependencies": {
     "firebase": "6.1.x",
     "path-browserify": "^1.0.0",
@@ -29,8 +29,8 @@
     "tslint": "^5.16.0",
     "typescript": "^3.0.3"
   },
-  "homepage": "https://github.com/benwinding/react-admin-firebase",
-  "email": "hello@benwinding.com",
+  "homepage": "https://github.com/romanPiga/react-admin-firebase",
+  "email": "roman.piga227@gmail.com",
   "license": "MIT",
   "scripts": {
     "build": "rm -rf dist && microbundle",
