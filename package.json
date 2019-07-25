@@ -1,5 +1,5 @@
 {
-  "name": "react-admin-firebase-basic",
+  "name": "react-admin-firebase",
   "description": "A firebase data provider for the React Admin framework",
   "version": "0.0.1",
   "dependencies": {
