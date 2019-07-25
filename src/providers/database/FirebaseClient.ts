@@ -63,10 +63,10 @@ export class FirebaseClient implements IFirebaseClient {
       }
       const docObj = {
         ...data,
-        createdate: this.fireWrapper.serverTimestamp(),
-        lastupdate: this.fireWrapper.serverTimestamp(),
-        createdby: currentUserEmail,
-        updatedby: currentUserEmail
+        //createdate: this.fireWrapper.serverTimestamp(),
+        //lastupdate: this.fireWrapper.serverTimestamp(),
+        //createdby: currentUserEmail,
+        //updatedby: currentUserEmail
       };
       await r.collection.doc(overridenId).set(docObj, { merge: true });
       return {
@@ -80,10 +80,10 @@ export class FirebaseClient implements IFirebaseClient {
     const data = await this.parseDataAndUpload(r, newId, params.data);
     const docObj = {
       ...data,
-      createdate: this.fireWrapper.serverTimestamp(),
-      lastupdate: this.fireWrapper.serverTimestamp(),
-      createdby: currentUserEmail,
-      updatedby: currentUserEmail
+      //createdate: this.fireWrapper.serverTimestamp(),
+      //lastupdate: this.fireWrapper.serverTimestamp(),
+      //createdby: currentUserEmail,
+      //updatedby: currentUserEmail
     };
     await r.collection.doc(newId).set(docObj, {merge: false});
     return {
@@ -124,8 +124,8 @@ export class FirebaseClient implements IFirebaseClient {
       const data = await this.parseDataAndUpload(r, id, params.data);
       r.collection.doc(id).update({
         ...data,
-        lastupdate: this.fireWrapper.serverTimestamp(),
-        updatedby: currentUserEmail,
+        //lastupdate: this.fireWrapper.serverTimestamp(),
+        //updatedby: currentUserEmail,
       }).catch((error) => {
         logError("apiUpdateMany error", { error });
       });
